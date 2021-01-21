@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void swap(char **a,char **b)             //¶¨Òå¶þ¼¶Ö¸Õë ÒòÎª±¾ÉíµÄp[j]¼´¶þÎ¬Êý×éµÄÒ»ÐÐµÄÊ×µØÖ·£¬Òò¶ø¶ÔÆäÔÙ´ÎÈ¡µØÖ·¼´ÊÇ¶þ¼¶Ö¸Õë 
+void swap(char **a,char **b)             //å®šä¹‰äºŒçº§æŒ‡é’ˆ å› ä¸ºæœ¬èº«çš„p[j]å³äºŒç»´æ•°ç»„çš„ä¸€è¡Œçš„é¦–åœ°å€ï¼Œå› è€Œå¯¹å…¶å†æ¬¡å–åœ°å€å³æ˜¯äºŒçº§æŒ‡é’ˆ 
 {
 	char *t;
 	 t=*a;
@@ -12,7 +12,7 @@ int main()
 	int n,i,j,k,t=0;
 	char s1[1000][100],s2[1000][100],s3[1000][100];
 	char *p[1000];
-	while (scanf("%d\n",&n),n!=0)               //Á½²ãÊäÈëÐ´·¨»áÔì³ÉÊä³ö³¬ÏÞ 
+	while (scanf("%d\n",&n),n!=0)               //ä¸¤å±‚è¾“å…¥å†™æ³•ä¼šé€ æˆè¾“å‡ºè¶…é™ 
 	{
 		
 		for (i=0;i<n;i++)
@@ -47,7 +47,7 @@ int main()
 			{
 				if (strcmp(p[j],p[j-1])<0)
 				{
-					swap(&p[j],&p[j-1]);          //¶ÔÁ½¸ö×Ö·û´®µÄÒ»¼¶Ö¸Õë¼´µØÖ·½øÐÐ½»»»£¬ÊÂÊµÉÏp[j]ºÍp[j-1]ËùÖ¸µÄÄÚÈÝÒÑ¾­·¢ÉúÁË½»»» 
+					swap(&p[j],&p[j-1]);          //å¯¹ä¸¤ä¸ªå­—ç¬¦ä¸²çš„ä¸€çº§æŒ‡é’ˆå³åœ°å€è¿›è¡Œäº¤æ¢ï¼Œäº‹å®žä¸Šp[j]å’Œp[j-1]æ‰€æŒ‡çš„å†…å®¹å·²ç»å‘ç”Ÿäº†äº¤æ¢ 
 				}
 			}
 		}
@@ -57,34 +57,3 @@ int main()
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
